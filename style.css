@@ -1,0 +1,80 @@
+body 
+{
+  margin: 0;
+  font-family: "Fraunces", serif;
+  background: url('images/Waterlily-Pond.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-box 
+{
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  background-color: lightcyan;
+}
+
+h1 
+{
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  margin: 0;
+  color: black;
+}
+
+
+.subtitle
+{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  color: grey; 
+}
+
+h2 
+{
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  margin : 0 ; 
+  color: yellow;
+}
+
+.nav 
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li 
+{
+  margin: 15px 0;
+}
+
+.nav a 
+{
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 5px 0;
+  border: 1px solid black;
+  color: black;
+}
+
+.nav a:hover 
+{
+  background-color: lightpink;
+}
+  
+
