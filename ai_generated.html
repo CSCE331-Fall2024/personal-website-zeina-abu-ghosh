@@ -1,2 +1,68 @@
-<link rel="stylesheet" href="style.css">
-<h2>THIS IS AI PAGE </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Gallery - Zeina Abu Ghosh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1> Art Gallery</h1>
+            <p>Choose an art style and that will display my favorite artwork!</p>
+
+            <!-- Art Style Selection -->
+            <label for="artStyle">Select Art Style:</label>
+            <select id="artStyle" onchange="showArt()">
+                <option value="abstract">Abstract</option>
+                <option value="landscape">Landscape</option>
+                <option value="portrait">Portrait</option>
+            </select>
+
+            <!-- Display Area for Generated Art -->
+            <div id="artDisplay" style="margin-top: 20px; text-align: center;">
+                <img id="artImage" src="images/default_art.png" alt="AI Art" style="max-width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showArt() {
+            // Get the selected art style
+            const style = document.getElementById("artStyle").value;
+            console.log("Selected Style:", style); // Debugging line
+
+            // Art data
+            const artData = 
+            {
+                abstract: 
+                {
+                    src: 'images/ai_abstract.jpeg',
+                    
+                },
+                landscape: 
+                {
+                    src: 'images/ai_landscape.jpg',
+                   
+                },
+                portrait: 
+                {
+                    src: 'images/ai_portrait.jpeg',
+                    
+                }
+            };
+
+            // Update the displayed image based on the selected style
+            document.getElementById("artImage").src = artData[style].src;
+            document.getElementById("artDescription").innerText = artData[style].description;
+
+        }
+    </script>
+
+    
+</body>
+</html>
+
+
+

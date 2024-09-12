@@ -1,2 +1,87 @@
-<link rel="stylesheet" href="style.css">
-<h2>THIS IS SERVICE PAGE</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Zeina Abu Ghosh</title>
+    <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1>Service</h1>
+            <p class="subtitle">See how I give back to my community through volunteering and mentoring.</p>
+            
+            <!-- Fish Camp Section -->
+            <div class="section-box">
+            <h2>Fish Camp</h2>
+            <p>
+                As a Fish Camp counselor at Texas A&M, I had the opportunity to guide and mentor incoming freshmen, helping them transition smoothly into college life.
+                My role was rooted in service, where I focused on creating a welcoming and inclusive environment that allowed new students to feel comfortable, ask questions, and learn about the traditions and values that define the Aggie Spirit. 
+                I led small groups, facilitated activities, and organized discussions that fostered a strong sense of community, ensuring that each freshman felt seen, heard, and supported. These interactions were not just about sharing information but about building trust and a sense of belonging, 
+                which are crucial in helping new students navigate their first year.
+                Through service-oriented leadership, I aimed to make a positive impact on their college journey by equipping them with the confidence and resources they needed to succeed both academically and socially. 
+                Whether it was through team-building exercises, one-on-one conversations, or simply being a reliable presence, my goal was to help freshmen overcome the challenges of adapting to a new environment. 
+                My commitment to service extended beyond the camp itself; I continually strived to be a mentor and resource for them even after camp ended. 
+                By staying connected and offering ongoing support, I was able to foster lasting relationships and provide guidance as they navigated their first year at Texas A&M.
+
+                The experience taught me the profound impact that service and mentorship can have on individuals during pivotal moments in their lives. 
+                It reinforced my belief in the power of community and the importance of giving back, which are values I will carry forward in my future endeavors. 
+                Serving as a Fish Camp counselor was not only about leadership but about making a meaningful difference in the lives of others, an experience that has been both humbling and incredibly rewardingAs a Fish Camp counselor, 
+                I had the oppurtunity to guide and mentor incoming freshmen, helping them transition smoothly into the college life. 
+                My role involved leading small groups, organizing activities and fostering a sense of community, all while sharing the Aggie Spirit!
+                Trhough service-oriented leadershp, I aimed to make a positive impact on their college journey, equipping them with confidence and resources they need to succeed. 
+                My commitment to service extended beyong just the camp sessions, as I continually strived to be a resource and mentore for them after camp.
+
+                 
+            </p>
+            
+            <!-- Fish Camp Image -->
+            <img src="images/fishcamp.png" alt="Fish Camp" style="width:100%; height:auto; border-radius: 10px; margin-top: 20px;">
+            
+            <!-- Link to Fish Camp -->
+            <p>
+                To learn more about Fish Camp: 
+                <a href="https://fishcamp.tamu.edu" target="_blank" class="service-link">Fish Camp Official Website</a>
+            </p>
+            </div>
+
+            <!-- button -->
+            <button onclick="toggleStyle()" aria-label="Toggle Style">
+                <span id="icon" class="icon">🎨</span>
+            </button>
+
+
+        </div>
+    </div>
+
+    <!-- insert toggle function -->
+    <script>
+        function toggleStyle() 
+        {
+            const currentStyle = document.getElementById('theme-stylesheet');
+            const isOriginal = currentStyle.getAttribute('href') === 'style.css';
+            const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
+            currentStyle.setAttribute('href', newStyle);
+            const icon = document.getElementById('icon');
+        
+            
+            // Change the icon based on the current style
+            if (isOriginal) {
+                icon.innerText = '🖌️'; //  icon for alternate style
+            } else {
+                icon.innerText = '🎨'; //  icon for original style
+            }
+            
+            // Store the current style choice
+            localStorage.setItem('selectedStyle', newStyle);
+        
+        }
+        
+    
+            </script>
+        
+
+
+</body>
+</html>

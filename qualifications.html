@@ -1,2 +1,88 @@
-<link rel="stylesheet" href="style.css">
-<h2>THIS IS QUALIFICATIONS PAGE </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Qualifications - Zeina Abu Ghosh</title>
+    <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1>Qualifications</h1>
+            <p class="subtitle">Discover my skills & interests, and view my resume
+            </p>
+            
+
+            <div class="section-box">
+                <h2>Why Computer Engineering</h2>
+                <p> I chose computer engineering because it blends both computer science and electrical engineering, two paths I was interested in. 
+                    This major provides a deep understanding of both hardware and software, covering topics such as digital logic design, computer architecture, embedded systems, microprocessors, and software engineering. 
+                </p>
+                    <a href="https://catalog.tamu.edu/undergraduate/engineering/computer-science/computer-engineering-bs/#programrequirementstext" target="_blank">TAMU official program requirements</a>
+            </div>
+            
+            <!-- Technical Skills List -->
+            <div class="section-box">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Programming Languages: Python, Java, C++</li>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Database Management: SQL</li>
+                    <li>Tools & Frameworks: Git</li>
+                    <li>Operating Systems: Windows, Linux, macOS</li>
+                    <li>Hardware Description Language: Verilog</li>
+                    <li>Electronic Design Automation: Cadence</li>
+                    <li>Embedded Systems: Raspberry Pi</li>
+                    <li>VLSI Design Tools: V93K</li>
+                    <li>Electronic Test Systems: ETS364</li>
+                    <li>Statistical Analysis & Data Visualization: RStudio</li>
+                    <li>Mathematical Computing: MATLAB</li>
+                </ul>
+            </div>
+
+
+            
+
+              <!-- embedded resume - automatically view it , with the option to download   -->
+            <embed src="documents/zeina_abughosh_resume.pdf" type="application/pdf" width="100%" height="600px" />
+
+         <!-- button -->
+         <button onclick="toggleStyle()" aria-label="Toggle Style">
+            <span id="icon" class="icon">🎨</span>
+        </button>
+
+
+        </div>
+    </div>
+
+ <!-- insert toggle function -->
+ <script>
+    function toggleStyle() 
+    {
+        const currentStyle = document.getElementById('theme-stylesheet');
+        const isOriginal = currentStyle.getAttribute('href') === 'style.css';
+        const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
+        currentStyle.setAttribute('href', newStyle);
+        const icon = document.getElementById('icon');
+        currentStyle.setAttribute('href', newStyle);
+        
+        // Change the icon based on the current style
+        if (isOriginal) {
+            icon.innerText = '🖌️'; //  icon for alternate style
+        } else {
+            icon.innerText = '🎨'; //  icon for original style
+        }
+        
+        // Store the current style choice
+        localStorage.setItem('selectedStyle', newStyle);
+    
+    }
+    
+   
+        </script>
+    
+
+
+</body>
+</html>
