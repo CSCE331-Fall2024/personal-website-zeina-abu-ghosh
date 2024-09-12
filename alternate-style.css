@@ -1,0 +1,243 @@
+/* this is all landing page stuff */ 
+body 
+{
+  margin: 0;
+  font-family: "Fraunces", serif;
+  background: url('images/blue-painting.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top:60px;
+  box-sizing: border-box;
+}
+
+.content-box 
+{
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;
+  background-color: rgb(228, 223, 168);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+h1 
+{
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  margin: 0;
+  color: black;
+}
+
+
+.subtitle-primary
+{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  color: grey; 
+}
+
+h2 
+{
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  margin : 0 ; 
+  color: rgb(213, 34, 148);
+}
+
+.nav 
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0 
+}
+
+.nav li 
+{
+  margin: 25px 0;
+}
+
+.nav a 
+{
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 5px 0;
+  border: 1px solid black;
+  color: black;
+}
+
+.nav a:hover 
+{
+  background-color: rgb(213, 184, 232);
+}
+  
+
+
+.social-links 
+{
+  margin-top: 20px;
+}
+
+.social-links ul 
+{
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li 
+{
+  display: inline;
+  margin-right: 15px;
+}
+
+.social-links a 
+{
+  text-decoration: none;
+  color: #0073b1; 
+  transition: color 0.3s;
+  font-size: 24px;
+}
+
+.social-links a:hover 
+{
+  color: lightpink; 
+}
+
+
+
+
+/* tech portfolio styling */ 
+
+.school-projects, .internship, .research 
+{
+  margin-bottom: 30px; 
+}
+
+.school-projects h2, .internship h2, .research h2 
+{
+  font-size: 24px;
+  color: #333;
+}
+
+.school-projects p, .internship p, .research p 
+{
+  font-size: 16px;
+  color: #666;
+}
+
+.school-projects ul 
+{
+  list-style: none;
+  padding: 0;
+}
+
+.school-projects li 
+{
+  margin-bottom: 20px;
+}
+
+.school-projects a 
+{
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.school-projects a:hover 
+{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.internship a, .research a 
+{
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.internship a:hover, .research a:hover 
+{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.section-box 
+{
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #83b4eb;
+  margin-bottom: 30px;
+}
+
+.section-box h2 
+{
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+}
+
+.section-box p 
+{
+  font-size: 16px;
+  color: #666;
+}
+
+.section-box ul 
+{
+  list-style: none;
+  padding: 0;
+}
+
+.section-box li 
+{
+  margin-bottom: 20px;
+}
+
+.section-box a 
+{
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-box a:hover 
+{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.section-box img 
+{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+button 
+{
+  background: none;
+  border: none;
+  font-size: 24px; 
+  cursor: pointer;
+}
+
+.icon 
+{
+  display: inline-block;
+}
