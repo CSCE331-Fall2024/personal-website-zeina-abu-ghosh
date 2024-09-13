@@ -1,8 +1,7 @@
-/* this is all landing page stuff */ 
 body 
 {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Playwrite CU", cursive;
   background: url('images/blue-painting.png') no-repeat center center fixed;
   background-size: cover;
 }
@@ -31,27 +30,26 @@ body
 h1 
 {
   font-size: 32px;
-  font-family: "Fraunces", serif;
+  font-family: "Playwrite CU", cursive;
   margin: 0;
-  color: black;
+  color: rgb(24, 23, 23);
 }
-
 
 .subtitle-primary
 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Abel", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin-top: 20px; 
   margin-bottom: 20px; 
-  color: grey; 
+  color: rgb(255, 255, 255); 
 }
 
 h2 
 {
   font-size: 18px;
-  font-family: "Fraunces", serif;
+  font-family: "Playwrite CU", cursive;
   margin : 0 ; 
   color: rgb(213, 34, 148);
 }
@@ -83,8 +81,6 @@ h2
   background-color: rgb(213, 184, 232);
 }
   
-
-
 .social-links 
 {
   margin-top: 20px;
@@ -105,20 +101,16 @@ h2
 .social-links a 
 {
   text-decoration: none;
-  color: #0073b1; 
+  color: #e61313; 
   transition: color 0.3s;
   font-size: 24px;
 }
 
 .social-links a:hover 
 {
-  color: lightpink; 
+  color: rgb(5, 74, 12); 
 }
 
-
-
-
-/* tech portfolio styling */ 
 
 .school-projects, .internship, .research 
 {
@@ -128,13 +120,13 @@ h2
 .school-projects h2, .internship h2, .research h2 
 {
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
 }
 
 .school-projects p, .internship p, .research p 
 {
   font-size: 16px;
-  color: #666;
+ 
 }
 
 .school-projects ul 
@@ -150,50 +142,57 @@ h2
 
 .school-projects a 
 {
-  color: #007BFF;
+  
   text-decoration: none;
   font-weight: bold;
 }
 
 .school-projects a:hover 
 {
-  color: #0056b3;
+  
   text-decoration: underline;
 }
 
 .internship a, .research a 
 {
-  color: #007BFF;
+
   text-decoration: none;
   font-weight: bold;
 }
 
 .internship a:hover, .research a:hover 
 {
-  color: #0056b3;
+ 
   text-decoration: underline;
 }
 
 .section-box 
 {
-  padding: 20px;
   border: 1px solid #ddd;
+  background-color: #665088;
+  padding: 20px;
   border-radius: 10px;
-  background-color: #83b4eb;
   margin-bottom: 30px;
 }
 
 .section-box h2 
 {
+  color: rgb(16, 15, 15);
   font-size: 24px;
-  color: #333;
   margin-top: 0;
 }
 
+.section-box h3
+{
+  color: rgb(16, 15, 15);
+  font-size: 14px;
+  margin-top: 0;
+}
 .section-box p 
 {
+  color: #fbfafa;
   font-size: 16px;
-  color: #666;
+ 
 }
 
 .section-box ul 
@@ -205,18 +204,19 @@ h2
 .section-box li 
 {
   margin-bottom: 20px;
+  color : white; 
 }
 
 .section-box a 
 {
-  color: #007BFF;
+  color: #ff0040;
   text-decoration: none;
   font-weight: bold;
 }
 
 .section-box a:hover 
 {
-  color: #0056b3;
+  color:  #ff0040;
   text-decoration: underline;
 }
 
@@ -227,7 +227,6 @@ h2
   border-radius: 10px;
   margin-top: 20px;
 }
-
 
 button 
 {
@@ -240,4 +239,29 @@ button
 .icon 
 {
   display: inline-block;
+}
+
+.navbar 
+{
+  padding: 10px 10px; 
+  display: flex; 
+  justify-content: center; 
+}
+  
+.navbar .nav 
+{
+  display: flex; 
+  gap: 10px; 
+}
+
+.navbar .nav li 
+{
+  display: inline; 
+}
+
+.navbar .nav a 
+{
+  color: #ff0040;
+  padding: 8px  ;
+  background-color: whitesmoke;
 }
