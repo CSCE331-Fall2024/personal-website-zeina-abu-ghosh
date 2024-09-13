@@ -28,4 +28,73 @@
             <div class="section-box">
             <h2>Fish Camp</h2>
             <p>
-                As a Fish Camp counselor at Texas A&M, I had the opportunity to guide and mentor incoming freshmen, helping them transition 
+                As a Fish Camp counselor at Texas A&M, I had the opportunity to guide and mentor incoming freshmen, helping them transition smoothly into college life. 
+                My role was rooted in service, where I focused on creating a welcoming and inclusive environment that allowed new students to feel comfortable, ask questions, and learn about the traditions and values that define the Aggie Spirit. 
+                My fellow counselor Logan and I led small groups of freshmen in activities and organized discussions with a goal of fostering a strong sense of community.  <br> <!-- add new line -->
+                <br> <!-- add new line -->
+                My commitment to service extended beyond the camp itself; I continually strived to be a mentor and resource for the new Aggies even after camp ended, by studying with them on campus or attending football games at Kyle Field.
+                 By staying connected and offering ongoing support, I was able to foster lasting relationships that will last for years as a student at A&M, and maybe even beyond.  <br> <!-- add new line -->
+                <br> <!-- add new line -->
+                This experience made me realize the value of mentoring and service to those going through significant life transitions, particularly for young adults venturing outside of their comfort zones and moving away from their families. 
+                It also served as a helpful reminder of the value of giving back, all of which I will carry with me in my future endeavors. 
+                Being a counselor at Fish Camp has been humbling and immensely fulfilling. It has taught me leadership skills as well as how to positively impact other people's lives.  <br> <!-- add new line -->
+                <br> <!-- add new line -->
+                Being a counselor at Fish Camp was just the start of my effort to change the world. My desire to help others has increased tenfold because of how much I saw it positively affected the camp goers, and I'm determined to keep going after Fish Camp. 
+                I'm excited to seize new chances to mentor, lead, and make a positive impact on the communities I'm a part of. I'll use the knowledge and understanding I've received to promote growth and connection everywhere I go. 
+            </p>
+            
+            <!-- Fish Camp Image -->
+            <img src="images/fishcamp.png" alt="Fish Camp" style="width:100%; height:auto; border-radius: 10px; margin-top: 20px;">
+            
+            <!-- Link to Fish Camp -->
+            <p>
+                To learn more about Fish Camp: 
+                <a href="https://fishcamp.tamu.edu" target="_blank" class="service-link">Fish Camp Official Website</a>
+            </p>
+            </div>
+
+            <!-- button -->
+            <button onclick="toggleStyle()" aria-label="Toggle Style">
+                <span id="icon" class="icon">🎨</span>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- insert toggle function -->
+    <script>
+        function toggleStyle() 
+        {
+            const currentStyle = document.getElementById('theme-stylesheet');
+            const isOriginal = currentStyle.getAttribute('href') === 'style.css';
+            const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
+            currentStyle.setAttribute('href', newStyle);
+            const icon = document.getElementById('icon');
+            
+            // Change the icon based on the current style
+            if (isOriginal) {
+                icon.innerText = '🖌️'; //  icon for alternate style
+            } else {
+                icon.innerText = '🎨'; //  icon for original style
+            }
+            
+            // Store the current style choice
+            localStorage.setItem('selectedStyle', newStyle);
+        
+        }
+        
+        window.onload = function() {
+        const savedStyle = localStorage.getItem('selectedStyle');
+        const currentStyle = document.getElementById('theme-stylesheet');
+        const icon = document.getElementById('icon');
+        
+        if (savedStyle) {
+            currentStyle.setAttribute('href', savedStyle);
+            icon.innerText = savedStyle === 'style.css' ? '🎨' : '🖌️';
+        }
+        };
+        
+    </script>
+
+</body>
+</html>
