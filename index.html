@@ -6,6 +6,7 @@
     <title>Zeina Abu Ghosh</title>
     <link rel="stylesheet" href="style.css" id="theme-stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="content-box">
@@ -14,57 +15,60 @@
                 <br> <!-- add new line -->
                 Here are a few links to get to know me more : 
             </p>
-
             <div class="social-links">
                 <ul>
                     <li><a href="https://github.com/zeina313" target="_blank">GitHub</a></li>
                     <li><a href="https://linkedin.com/in/zeina-abu-ghosh" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
-
             <ul class="nav">
                 <li><a href="techportfolio.html">Technical Portfolio</a></li>
                 <li><a href="qualifications.html">Qualifications</a></li>
                 <li><a href="service.html">Service</a></li>
                 <li><a href="ai_generated.html">AI-generated</a></li>
             </ul>
-           
             <!-- button -->
             <button onclick="toggleStyle()" aria-label="Toggle Style">
                 <span id="icon" class="icon">🎨</span>
             </button>
-            
         </div>
     </div>
 
-
-          <!-- insert toggle function -->
+    <!-- insert toggle function -->
     <script>
-function toggleStyle() 
-{
-    const currentStyle = document.getElementById('theme-stylesheet');
-    const isOriginal = currentStyle.getAttribute('href') === 'style.css';
-    const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
-    currentStyle.setAttribute('href', newStyle);
-    const icon = document.getElementById('icon');
+    function toggleStyle() 
+    {
+        const currentStyle = document.getElementById('theme-stylesheet');
+        const isOriginal = currentStyle.getAttribute('href') === 'style.css';
+        const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
+        currentStyle.setAttribute('href', newStyle);
+        const icon = document.getElementById('icon');
 
-    
-    // Change the icon based on the current style
-    if (isOriginal) {
-        icon.innerText = '🖌️'; //  icon for alternate style
-    } else {
-        icon.innerText = '🎨'; //  icon for original style
+        // Change the icon based on the current style
+        if (isOriginal) {
+            icon.innerText = '🖌️'; //  icon for alternate style
+        } else {
+            icon.innerText = '🎨'; //  icon for original style
+        }
+
+        // Store the current style choice
+        localStorage.setItem('selectedStyle', newStyle);
+
     }
-    
-    // Store the current style choice
-    localStorage.setItem('selectedStyle', newStyle);
 
-}
-
-
+    window.onload = function() 
+    {
+        const savedStyle = localStorage.getItem('selectedStyle');
+        const currentStyle = document.getElementById('theme-stylesheet');
+        const icon = document.getElementById('icon');
+        
+        if (savedStyle) {
+            currentStyle.setAttribute('href', savedStyle);
+            icon.innerText = savedStyle === 'style.css' ? '🎨' : '🖌️';
+        }
+    }
     </script>
-
-
 
 </body>
 </html>
+
