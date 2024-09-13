@@ -35,7 +35,6 @@ h1
   color: black;
 }
 
-
 .subtitle-primary
 {
   font-family: "Roboto Mono", monospace;
@@ -82,7 +81,6 @@ h2
   background-color: rgb(168, 227, 183);
 }
   
-
 .social-links {
   margin-top: 20px;
 }
@@ -107,11 +105,6 @@ h2
 .social-links a:hover {
   color: lightpink; 
 }
-
-
-
-
-/* tech portfolio styling */ 
 
 .school-projects, .internship, .research 
 {
@@ -178,15 +171,16 @@ h2
 
 .section-box h2 
 {
-  font-size: 24px;
   color: #333;
+  font-size: 24px;
   margin-top: 0;
 }
 
 .section-box p 
 {
-  font-size: 16px;
   color: #666;
+  font-size: 16px;
+  
 }
 
 .section-box ul 
@@ -233,3 +227,31 @@ button
 {
   display: inline-block;
 }
+
+.navbar 
+{
+  padding: 10px 10px; 
+  display: flex; 
+  justify-content: center; 
+}
+  
+.navbar .nav 
+{
+  display: flex; 
+  gap: 10px; 
+}
+
+.navbar .nav li 
+{
+  display: inline; 
+}
+
+.navbar .nav a 
+{
+  color: #0056b3;
+  padding: 8px;
+  background-color: white; 
+}
+
+
+
