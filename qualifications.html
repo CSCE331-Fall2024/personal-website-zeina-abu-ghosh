@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css" id="theme-stylesheet">
 </head>
 <body>
+
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="techportfolio.html">Technical Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="ai_generated.html">AI-generated</a></li>
+    </ul>
+    </nav>
+
+
     <div class="container">
         <div class="content-box">
             <h1>Qualifications</h1>
@@ -31,58 +45,4 @@
                     <li>Database Management: SQL</li>
                     <li>Tools & Frameworks: Git</li>
                     <li>Operating Systems: Windows, Linux, macOS</li>
-                    <li>Hardware Description Language: Verilog</li>
-                    <li>Electronic Design Automation: Cadence</li>
-                    <li>Embedded Systems: Raspberry Pi</li>
-                    <li>VLSI Design Tools: V93K</li>
-                    <li>Electronic Test Systems: ETS364</li>
-                    <li>Statistical Analysis & Data Visualization: RStudio</li>
-                    <li>Mathematical Computing: MATLAB</li>
-                </ul>
-            </div>
-
-
-            
-
-              <!-- embedded resume - automatically view it , with the option to download   -->
-            <embed src="documents/zeina_abughosh_resume.pdf" type="application/pdf" width="100%" height="600px" />
-
-         <!-- button -->
-         <button onclick="toggleStyle()" aria-label="Toggle Style">
-            <span id="icon" class="icon">🎨</span>
-        </button>
-
-
-        </div>
-    </div>
-
- <!-- insert toggle function -->
- <script>
-    function toggleStyle() 
-    {
-        const currentStyle = document.getElementById('theme-stylesheet');
-        const isOriginal = currentStyle.getAttribute('href') === 'style.css';
-        const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
-        currentStyle.setAttribute('href', newStyle);
-        const icon = document.getElementById('icon');
-        currentStyle.setAttribute('href', newStyle);
-        
-        // Change the icon based on the current style
-        if (isOriginal) {
-            icon.innerText = '🖌️'; //  icon for alternate style
-        } else {
-            icon.innerText = '🎨'; //  icon for original style
-        }
-        
-        // Store the current style choice
-        localStorage.setItem('selectedStyle', newStyle);
-    
-    }
-    
-   
-        </script>
-    
-
-
-</body>
-</html>
+                    <li>

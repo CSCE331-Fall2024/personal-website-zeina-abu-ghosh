@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css" id="theme-stylesheet">
 </head>
 <body>
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="techportfolio.html">Technical Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="ai_generated.html">AI-generated</a></li>
+    </ul>
+    </nav>
+
     <div class="container">
         <div class="content-box">
             <h1>Technical Portfolio</h1>
@@ -15,7 +27,8 @@
             <!-- School Projects Section -->
             <div class="section-box school-projects">
                 <h2>School Projects</h2>
-                <p>Here is one school project I worked on in csce462 showcasing the design and implementation of a traffic light system.</p>
+                <p>One project I worked on this semester in csce462 was a stoplight system using the GPIO on the
+                    Raspberry Pi 3. It was designed using polling and interrupt technique. </p>
                 <ul>
                     <li>
                          <a href="https://youtube.com/shorts/kpCZvkY6dec?feature=share" target="_blank">Watch the Video</a>
@@ -28,60 +41,4 @@
             <div class="section-box internship">
                 <h2>Internship</h2>
                 <p>This past summer I intered at Texas Instruments Headquarters in Dallas, TX as a product/test engineer.
-                    My primary role involved designing and implementing test plans for various semiconductor devices, including analog and mixed-signal integrated circuits. 
-                    A significant part of my responsibilities was to develop automated test solutions. 
-                    This internship solidified my passion for engineering and provided a strong foundation for my future career in technology. 
-                </p>
-                <a href="https://careers.ti.com/engineering/" target="_blank">Learn More</a>
-            </div>
-
-            <!-- Research Section -->
-            <div class="section-box research">
-                <h2>Research</h2>
-                <p>I recently joined a research lab under Dr. Narasimha Reddy. His lab is focused creating an efficient prefetcher.  
-                    There is a paper already out and the goal is to build more on it. 
-                </p>
-                <a href="https://web.archive.org/web/20170610234814id_/http://cegroup.ece.tamu.edu:80/~pgratz/papers/micro2016_spp.pdf" target="_blank">Explore Research</a>
-            </div>
-
-
-            <!-- button -->
-            <button onclick="toggleStyle()" aria-label="Toggle Style">
-                <span id="icon" class="icon">🎨</span>
-            </button>
-
-        </div>
-    </div>
-
-<!-- insert toggle function -->
-    <script>
-        function toggleStyle() 
-        {
-            const currentStyle = document.getElementById('theme-stylesheet');
-            const isOriginal = currentStyle.getAttribute('href') === 'style.css';
-            const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
-            currentStyle.setAttribute('href', newStyle);
-            const icon = document.getElementById('icon');
-            currentStyle.setAttribute('href', newStyle);
-            
-            // Change the icon based on the current style
-            if (isOriginal) {
-                icon.innerText = '🖌️'; //  icon for alternate style
-            } else {
-                icon.innerText = '🎨'; //  icon for original style
-            }
-            
-            // Store the current style choice
-            localStorage.setItem('selectedStyle', newStyle);
-        
-        }
-        
-            </script>
-
-
-</body>
-</html>
-
-
-
-
+                    My primary role involved designing and implementing test plans for various semiconductor devices,

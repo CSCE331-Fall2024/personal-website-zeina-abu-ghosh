@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="techportfolio.html">Technical Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="ai_generated.html">AI-generated</a></li>
+    </ul>
+    </nav>
+
+
     <div class="container">
         <div class="content-box">
             <h1> Art Gallery</h1>
@@ -27,6 +40,7 @@
         </div>
     </div>
 
+    <!-- insert toggle function -->
     <script>
         function showArt() {
             // Get the selected art style
@@ -48,21 +62,4 @@
                 },
                 portrait: 
                 {
-                    src: 'images/ai_portrait.jpeg',
-                    
-                }
-            };
-
-            // Update the displayed image based on the selected style
-            document.getElementById("artImage").src = artData[style].src;
-            document.getElementById("artDescription").innerText = artData[style].description;
-
-        }
-    </script>
-
-    
-</body>
-</html>
-
-
-
+                    src: 'imag
