@@ -45,4 +45,73 @@
                     <li>Database Management: SQL</li>
                     <li>Tools & Frameworks: Git</li>
                     <li>Operating Systems: Windows, Linux, macOS</li>
-                    <li>
+                    <li>Hardware Description Language: Verilog</li>
+                    <li>Electronic Design Automation: Cadence</li>
+                    <li>Embedded Systems: Raspberry Pi</li>
+                    <li>VLSI Design Tools: V93K</li>
+                    <li>Electronic Test Systems: ETS364</li>
+                    <li>Statistical Analysis & Data Visualization: RStudio</li>
+                    <li>Mathematical Computing: MATLAB</li>
+
+                    <br> <!-- add new line -->
+                    <br> <!-- add new line -->
+                    <h3>websites that are constantly helping me grow : </h3>
+                    <a href="https://learning.linkedin.com/cx/get-started?src=go-pa&cid=" target="_blank">LINKEDIN - LEARNING</a>
+                    <br> <!-- add new line -->
+                    <a href="https://stackoverflow.com/" target="_blank">STACK OVERFLOW </a>
+                    <br> <!-- add new line -->
+                    <a href="https://www.w3schools.com/" target="_blank">W3 SCHOOLS </a>
+                    <br> <!-- add new line -->
+
+                </ul>
+            </div>
+            
+              <!-- embedded resume - automatically view it , with the option to download   -->
+              <iframe src="https://drive.google.com/uc?export=view&id=1WLWDvAcyiU-toAL4yC2_uKG4F230UNMi" width="80%" height="600px" style="border: none;"></iframe>
+
+         <!-- button -->
+         <button onclick="toggleStyle()" aria-label="Toggle Style">
+            <span id="icon" class="icon">🎨</span>
+        </button>
+
+        </div>
+    </div>
+
+    <!-- insert toggle function -->
+    <script>
+    function toggleStyle() 
+    {
+        const currentStyle = document.getElementById('theme-stylesheet');
+        const isOriginal = currentStyle.getAttribute('href') === 'style.css';
+        const newStyle = isOriginal ? 'alternate-style.css' : 'style.css';
+        currentStyle.setAttribute('href', newStyle);
+        const icon = document.getElementById('icon');
+        currentStyle.setAttribute('href', newStyle);
+        
+        // Change the icon based on the current style
+        if (isOriginal) {
+            icon.innerText = '🖌️'; //  icon for alternate style
+        } else {
+            icon.innerText = '🎨'; //  icon for original style
+        }
+        
+        // Store the current style choice
+        localStorage.setItem('selectedStyle', newStyle);
+    
+    }
+    
+    window.onload = function() {
+    const savedStyle = localStorage.getItem('selectedStyle');
+    const currentStyle = document.getElementById('theme-stylesheet');
+    const icon = document.getElementById('icon');
+    
+    if (savedStyle) {
+        currentStyle.setAttribute('href', savedStyle);
+        icon.innerText = savedStyle === 'style.css' ? '🎨' : '🖌️';
+    }
+    };
+   
+    </script>
+    
+</body>
+</html>
