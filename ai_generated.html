@@ -62,4 +62,20 @@
                 },
                 portrait: 
                 {
-                    src: 'imag
+                    src: 'images/ai_portrait.jpeg',
+                    
+                }
+            };
+
+            // Update the displayed image based on the selected style
+            document.getElementById("artImage").src = artData[style].src;
+            document.getElementById("artDescription").innerText = artData[style].description;
+
+        }
+    </script>
+
+</body>
+</html>
+
+
+
