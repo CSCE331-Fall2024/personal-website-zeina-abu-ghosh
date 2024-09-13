@@ -1,12 +1,11 @@
-function showArt() 
-
 // AI PAGE FUNCTION 
+function showArt() 
 {
     // Get the selected art style
     const style = document.getElementById("artStyle").value;
-    console.log("Selected Style:", style); // Debugging line
+    console.log("Selected Style:", style); 
 
-    // Art data: Paths to AI-generated images based on style
+    // Art data: Paths to images based on style
     const artData = {
         abstract: {
             src: 'images/ai_abstract.jpeg',
@@ -58,3 +57,16 @@ function toggleStyle()
     localStorage.setItem('selectedStyle', newStyle);
 
 }
+
+// Load the previously selected style on page load
+window.onload = function() 
+{
+    const savedStyle = localStorage.getItem('selectedStyle');
+    const currentStyle = document.getElementById('theme-stylesheet');
+    const icon = document.getElementById('icon');
+    
+    if (savedStyle) {
+        currentStyle.setAttribute('href', savedStyle);
+        icon.innerText = savedStyle === 'style.css' ? '🎨' : '🖌️';
+    }
+};
